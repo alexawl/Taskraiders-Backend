@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        server: Job Search
+    </title>
+</head>
+
+<body>
+    <h1>Home page</h1>
+    <div class="container">
+        <div class="row">
+            {% for job in jobs %}
+            <h1>{{ job.title }}</h1>
+            <h4>{{job.company}}</h4>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>
